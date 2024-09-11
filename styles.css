@@ -60,7 +60,7 @@
         width: 100%;
         padding: 10px;
 
-        h2{
+        h2 {
             display: flex;
             justify-content: center;
         }
@@ -70,12 +70,12 @@
             height: 200px;
         }
 
-        .estadisticas {
+        .statistics {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            margin-left: 10px
+            margin-left: 10px;
         }
     }
 
@@ -88,22 +88,21 @@
         margin-top: 10px;
     }
 
-    #aleatorio{
+    #random {
         background: #ffcc01;
     }
-  
+
     button:hover {
         transform: translate(-0.05em, -0.05em);
         box-shadow: 0.15em 0.15em;
     }
-  
+
     button:active {
         transform: translate(0.05em, 0.05em);
         box-shadow: 0.05em 0.05em;
     }
-  
 
-    .buscador{
+    .search {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -121,9 +120,9 @@
             width: 90%;
             justify-content: center;
         }
-    }  
-    
-    .extra{
+    }
+
+    .extra {
         display: flex;
         width: 100%;
     }
@@ -189,14 +188,18 @@
     background: #2bfa01;
     border-radius: 0.4em;
     cursor: pointer;
-    margin-left: 5px;
+    margin-right: 10px;
 }
 
-#evolutionChain {
-    margin-top: 15px;
+#involutionButton {
+    background: orchid;
+    border-radius: 0.4em;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-/* Ajustes para tablets */
+/* Tablet adjustments */
 @media(max-width: 1050px) {
     .pokedex {
         width: 55%;
@@ -208,8 +211,7 @@
     }
 }
 
-/* Ajustes para moviles */
-
+/* Mobile adjustments */
 @media(max-width: 768px) {
     .pokedex {
         width: 95%;
