@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +9,33 @@
 <body>
 
     <div class="container">
-        <h1>POKEDEX</h1>
-
         <div class="pokedex">
-        <input type="text" id="pokemonInput" placeholder="Nombre o Numero"> <br>
-        <button onclick="buscarPokemon()">buscar Pokemon</button>
-        <div id="pokemonInfo"></div>
+            <h1>POKEDEX</h1>
+            <div id="pokemonInfo"></div>
+            <div class="extra">
+                <button onclick="random()" id="random"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 10 3-3m0 0-3-3m3 3H5v3m3 4-3 3m0 0 3 3m-3-3h14v-3"/>
+                </svg>
+                </button>
+
+                <label class="shiny">
+                    <input class="toggle" type="checkbox">
+                    <span class="slider"></span>
+                    <span class="card-side"></span>
+                </label>
+        
+                <button id="involutionButton"><b>DEVOLVE</b></button>
+                <button id="evolutionButton"><b>EVOLVE</b></button>
+            </div>
+            <div class="search">
+            <input type="text" id="pokemonInput" placeholder="Name or Number">
+            <button onclick="searchPokemon()" id="search"><svg class="w-[12px] h-[12px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2.2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+              </svg>              
+            </button>
+            </div>
         </div>
-
-
     </div>
-
-
-
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
